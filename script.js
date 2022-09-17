@@ -4,11 +4,12 @@ const closeBtn = document.getElementById('close-button');
 openBtn.addEventListener('click', () => {
     sidebar.style.right = "0px"
     document.body.style.backgroundColor = "rgba(0, 0, 0, 0.5)"
+    openBtn.style.display = 'none'
 })
 closeBtn.addEventListener('click',() => {
     sidebar.style.right = "-350px"
     document.body.style.backgroundColor = "white"
-    
+    openBtn.style.display = 'block'
 })
 
 // dropdown
