@@ -12,6 +12,7 @@ closeBtn.addEventListener('click',() => {
     openBtn.style.display = 'block'
 })
 
+
 // dropdown
 const selectButton = document.querySelectorAll('.nav-item-wrap-child');
 const parent = document.querySelector('.nav-item');

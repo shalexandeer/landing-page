@@ -26,6 +26,24 @@ body{
     width: 65%;
     transition: 0.5s;
 }
+.left-hero img{
+    animation-name: fade-top;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes fade-top {
+    0%{opacity: 0; top: -20px;}
+    100%{opacity: 1; top: 0;}
+}
+.right-hero{
+    animation-name: fade-bottom;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes fade-bottom {
+    0%{opacity: 0; top: 20px;}
+    100%{opacity: 1; top: 0;}
+}
 #open-button{
     cursor: pointer;
 }
