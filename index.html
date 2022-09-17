@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-wrapper">
+      <div class="parent">
+        <!-- header -->
+        <header>
+          <div class="left">
+            <img src="images/logo.svg" alt="responsive" />
+          </div>
+          <nav id="navigation">
+            <div class="nav-wrapper">
+              <div class="close-btn">
+                <img
+                  src="/images/icon-close-menu.svg"
+                  alt=""
+                  id="close-button"
+                />
+              </div>
+              <div class="nav-item">
+                <div class="nav-item-wrap">
+                  <div class="nav-item-wrap-child feature">
+                    <a href="/"><p>Features</p></a>
+                    <img
+                      src="/images/icon-arrow-down.svg"
+                      alt=""
+                      srcset=""
+                      height="6px"
+                    />
+                  </div>
+                  <div class="dropdown-item">
+                    <div class="dropdown-item-wrap hide-sidebar" id="feature">
+                      <div class="dropdown-item-wrap-second">
+                        <img src="/images/icon-todo.svg" alt="" height="20px" />
+                        <a href="/"><p>Todo List</p></a>
+                      </div>
+                      <div class="dropdown-item-wrap-second">
+                        <img
+                          src="/images/icon-calendar.svg"
+                          alt=""
+                          height="20px"
+                        />
+                        <a href="/"><p>Calendar</p></a>
+                      </div>
+                      <div class="dropdown-item-wrap-second">
+                        <img
+                          src="/images/icon-reminders.svg"
+                          alt=""
+                          height="20px"
+                        />
+                        <a href="/"><p>Reminders</p></a>
+                      </div>
+                      <div class="dropdown-item-wrap-second">
+                        <img
+                          src="/images/icon-planning.svg"
+                          alt=""
+                          height="20px"
+                        />
+                        <a href="/"><p>Planning</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-item-wrap">
+                  <div class="nav-item-wrap-child company">
+                    <a href="/"><p>Company</p></a>
+                    <img
+                      src="/images/icon-arrow-down.svg"
+                      alt=""
+                      srcset=""
+                      height="6px"
+                    />
+                  </div>
+                  <div class="dropdown-item">
+                    <div class="dropdown-item-wrap hide-sidebar" id="company">
+                      <a href="/"><p>History</p></a>
+                      <a href="/"><p>Our Team</p></a>
+                      <a href="/"><p>Blog</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-item-wrap no-drop">
+                  <a href="/"><p>Careers</p></a>
+                </div>
+                <div class="nav-item-wrap no-drop">
+                  <a href="/"><p>About</p></a>
+                </div>
+              </div>
+              <div class="button-nav">
+                <a href="/"><p class="login">Login</p></a>
+                <a href="/"><p>Register</p></a>
+              </div>
+            </div>
+          </nav>
+          <div class="right">
+            <img src="images/icon-menu.svg" alt="" srcset="" id="open-button" />
+          </div>
+        </header>
+        <!-- Content Main -->
+        <main class="hero">
+          <div class="left-hero">
+            <img
+              src="/images/image-hero-mobile.png"
+              alt=""
+              class="responsive"
+            />
+          </div>
+          <div class="right-hero">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="/"><button type="submit">Learn more</button></a>
+            <div class="sponsor-gallery">
+              <img src="/images/client-databiz.svg" alt="" class="responsive" />
+              <img
+                src="/images/client-audiophile.svg"
+                alt=""
+                class="responsive"
+              />
+              <img src="/images/client-meet.svg" alt="" class="responsive" />
+              <img src="/images/client-maker.svg" alt="" class="responsive" />
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
