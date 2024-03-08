@@ -7,7 +7,7 @@ openBtn.addEventListener('click', () => {
     openBtn.style.display = 'none'
 })
 closeBtn.addEventListener('click',() => {
-    sidebar.style.right = "-350px"
+    sidebar.style.right = "-650px"
     document.body.style.backgroundColor = "white"
     openBtn.style.display = 'block'
 })
